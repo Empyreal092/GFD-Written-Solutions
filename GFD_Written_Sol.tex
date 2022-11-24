@@ -88,10 +88,13 @@ I had help from Professor Olivier Pauluis, who taught me GFD, the solutions prod
 
 \chapter{Erreta}\label{chap:erreta}
 \section{Jan 2010, Problem 2}
-The proposed streamfunction in the question, when plugged into the SWQG in P1, will not produce the Rayleigh equation we are asked to show. Because $U$ is not constant, $(yU)'$ has to use the product rule and produce a big mess. Use $\psi_y$ = $\psi'_y-U$ would lead to the right/intended Rayleigh equation.
+The proposed streamfunction in the question, when plugged into the SWQG in P1, will not produce the Rayleigh equation we are asked to show. Because $U$ is not constant, $(yU)'$ has to use the product rule and produce a big mess. Use $\psi_y$ = $\psi'_y-U$ would lead to the right/intended Rayleigh equation (of course $U$ is not in the unit of velocity but unit of streamfunction).
+
+\section{Jan 2010, Problem 3}
+In part (b) also assume adiabatic.
 
 \section{Sep 2010, Problem 4}
-(b), study $t\to \infty$ instead.
+In part (b) study $t\to \infty$ instead.
 
 \section{Jan 2012, Problem 3}
 Aug 2017, Problem 3 is the same and is a bit more friendly. See erreta \ref{err:aug_2017_3}. 
@@ -101,9 +104,6 @@ In part (e) the 2 in the second equation should not be there.
 
 \section{Jan 2015, Problem 3}\label{err:jan_2015_3}
 Part (c), the group velocity is positive thus the should wave moves east.
-
-\section{Aug 2016, Problem 1}
-Fully nonlinear? Not sure what that means.
 
 \section{Aug 2016, Problem 2}
 $u$ is the azimuthal velocity and $v$ is the radial. The matrial derivative is
@@ -227,7 +227,7 @@ ok
 Same as Aug 2012 Problem \ref{prob:Aug_2012_2}.
 \subsection{}
 
-\subsection{}
+\subsection{}\label{prob:jan_2010_1_b}
 
 \subsection{}
 \begin{align*}
@@ -241,15 +241,14 @@ We have the dimensional value for the atmosphere $\beta \sim 10^{-11}$ and $U\si
 \end{align*}
 The wavelength of the meander of subpolar jet stream.
 
-
 \section{Barotropic Instability}
-The proposed streamfunction in the question, when plugged into the SWQG in P1, will not produce the Rayleigh equation we are asked to show. Because U is not constant, $(yU)'$ has to use the product rule and produce a big mess. Use $\psi_y = \psi'_y-U$ would lead to the right Rayleigh equation.
+The proposed streamfunction in the question, when plugged into the SWQG in P1, will not produce the Rayleigh equation we are asked to show. Because U is not constant, $(yU)'$ has to use the product rule and produce a big mess. Use $\psi_y = \psi'_y-U$ would lead to the right Rayleigh equation (of course $U$ here is not in the unit of velocity, but in unit of streamfunction).
 
 Necessary condition:
 \begin{align*}
 \beta+FU-U_{yy}
 \end{align*}
-must change sign in the domain. $FU$ is the PV gradient due to finite deformation radius. 
+must change sign in the domain. $FU$ is the PV gradient due to finite deformation radius (cf. \ref{prob:jan_2010_1_b}). 
 
 \section{Ideal Gas Thermodynamics}\label{Jan_2010_Prob3}
 \subsection{}
@@ -395,7 +394,7 @@ Then
 \end{align*}
 Therefore we have that the time derivative of the energy are all in flux form. Therefore energy is a integral conserved property.
 
-Using the equation (\ref{eq:jan_2010_1},\ref{eq:jan_2010_2},\ref{eq:jan_2010_2},\ref{eq:jan_2010_2}) with Boussinesq approximation, we can derive the two-layer QG. The flat bottom and rigid lid version has simpler energetics. i.e.:
+Using the equation (\ref{eq:jan_2010_1},\ref{eq:jan_2010_2},\ref{eq:jan_2010_2},\ref{eq:jan_2010_2}) and standard approximation, we can derive the two-layer QG. The flat bottom and rigid lid version has simpler energetics. i.e.:
 \begin{align*}
 \KE &= |\nabla \Psi|^2+|\nabla \tau|^2\\
 \APE &= k_d^2\tau^2.
@@ -912,28 +911,32 @@ APE converted to KE, but not all, only 1/3 got converted. Did not conserve energ
 
 \section{Reduced gravity SWQG model}\label{prob:Aug_2012_2}
 \subsection{}
-
+\begin{enumerate}
+    \item Rossby number ($U/FL$) is small
+    \item Burger number ($L/L_d$) is order one ($L_d = R$ in this problem)
+    \item $|\beta L|\ll f$
+\end{enumerate}
 
 \subsection{}
 Dispersion relation:
 \begin{align*}
-\omega = \frac{kU(k^2+\ell^2)-k\beta}{k^2+\ell^2+F}.
+\omega = \frac{kU(k^2+\ell^2)-k\beta}{k^2+\ell^2+R}.
 \end{align*}
 
 \subsection{}
 Phase speed:
 \begin{align*}
-c_{px} = \frac{\omega}{k} = \frac{U(k^2+\ell^2)-\beta}{k^2+\ell^2+F}.
+c_{px} = \frac{\omega}{k} = \frac{U(k^2+\ell^2)-\beta}{k^2+\ell^2+R}.
 \end{align*}
 $U = 0$ case
 \begin{align*}
-c_{px}^{(0)} = \frac{\omega}{k} = \frac{-\beta}{k^2+\ell^2+F}.
+c_{px}^{(0)} = \frac{\omega}{k} = \frac{-\beta}{k^2+\ell^2+R}.
 \end{align*}
 It is not a simple Doppler shift. Because for this system
 \begin{align*}
-f+q = f_0+\beta y+\nabla^2\psi-F\psi
+f+q = f_0+\beta y+\nabla^2\psi-R\psi
 \end{align*}
-are conserved. Then a background $-U$ will lead to the $-Uy$ change in $\psi$. By recalling the mechanism of Rossby wave, we see that the $F\psi$ term will change the potential vorticity and thus the mechanism of Rossby wave. 
+are conserved. Then a background $-U$ will lead to the $-Uy$ change in $\psi$. By recalling the mechanism of Rossby wave, we see that the $R\psi$ term will change the potential vorticity and thus the mechanism of Rossby wave. 
 
 \subsection{}
 Long Rossby wave speed is indeed $-\beta R^2$, from $k,\ell\ll 1$ limit.
@@ -1891,7 +1894,11 @@ Wave has different phase at different depth. Therefore Boussinesq equations has 
 \chapter{Aug 2016}
 \section{Internal-gravity waves}\label{prob:aug_2016_1}
 \subsection{}
-???
+Because of 2D and incompressibility, we have $u_x+w_z = 0$. The fully nonlinear equation has terms like
+\begin{align*}
+    uA_x+wA_z
+\end{align*}
+that might be of concern. But for a single plain wave we see that the derivative and be put to $u$ and $w$ when written in Fourier. Therefore the nonlinear terms all cancels.
 
 \subsection{}
 Usual way of merging all equations into one about $\psi$ and obtain dispersion relation
@@ -2295,7 +2302,7 @@ This is a Laplace equation with periodic horizontal BC, Neumann BC at $z=0$, and
 \end{align*}
 Thus we have solution
 \begin{align*}
-    \hat{\psi} = A\exp\left[-\frac{KN}{f}z\right].
+    \hat{\psi} \propto -\frac{\hat b_s}{K}\exp\left[-\frac{KN}{f}z\right].
 \end{align*}
 Thus small horizontal scale, i.e. $K\gg 1$, gives quick decay (trapped near the surface).
 
@@ -2304,16 +2311,17 @@ Conservation, times $b$ evolution equation with $b$, and use incompressibility.
 
 We have
 \begin{align*}
-    \int b^2\;\de x\de y &= \int \hat{\psi}_z^*\hat{\psi}_z\;\de x\de y\\
-    &= -\int \hat{\psi}^*\hat{\psi}_{zz}\;\de x\de y
+    \int b^2\;\de x\de y &\propto \int {\psi}_z{\psi}_z\;\de x\de y\\
+    &= \sum_{k,\ell}\int  \hat{\psi}_z^*\hat{\psi}_z\;\de x\de y
 \end{align*}
 while
 \begin{align*}
-    \int u_0^2+v_0^2\;\de x\de y &= \int (-k^2-\ell^2)\hat{\psi}^*\hat{\psi}\;\de x\de y
+    \int u_0^2+v_0^2\;\de x\de y &= \sum_{k,\ell}\int (-k^2-\ell^2)\hat{\psi}^*\hat{\psi}\;\de x\de y
 \end{align*}
+
 From last part we know
 \begin{align*}
-    \hat{\psi}_{zz}\propto (k^2+\ell^2)\hat{\psi}.
+    \hat{\psi}_{z}\propto -\sqrt{k^2+\ell^2}\hat{\psi}.
 \end{align*}
 Thus we have that
 \begin{align*}
