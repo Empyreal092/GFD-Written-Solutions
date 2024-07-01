@@ -1,4 +1,7 @@
 # GFD-Written-Solutions
+
+This page is now deprecated. A currently maintained page of written solutions is on the [Courant website](https://math.nyu.edu/dynamic/resources/graduate-student-resource-pages/written-exams/) (Courant log-in required).
+
 This document contains the erreta and some solutions to the GFD Written Exam at NYU Courant. The exams are in the "Problem\_packages" folder and is available by request from the department. 
 
 Read Chapter 2 - Erreta before doing the problems might save you some time and pain. It contains the (possible) errors of the problems. 
